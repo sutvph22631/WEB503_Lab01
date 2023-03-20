@@ -1,0 +1,32 @@
+{
+  "name": "web503",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon main.js",
+    "server": "json-server --watch db.json --port 3001",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sutvph22631/Node_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sutvph22631/Node_js/issues"
+  },
+  "homepage": "https://github.com/sutvph22631/Node_js#readme",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "json-server": "^0.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
